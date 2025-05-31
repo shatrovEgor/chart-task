@@ -130,7 +130,7 @@ export default function App() {
         )}
       />
       <ReferenceLine y={mean_pv} stroke={COLORS.PV_COLOR} strokeDasharray="10 20" />
-      <ReferenceArea y1={10000} y2={mean_pv + stdDev_pv} fill={COLORS.PV_COLOR} fillOpacity={0.2} />
+      <ReferenceArea y1={mean_pv + stdDev_pv} fill={COLORS.PV_COLOR} fillOpacity={0.2} />
       <ReferenceArea y1={0} y2={mean_pv - stdDev_pv} fill={COLORS.PV_COLOR} fillOpacity={0.2} />
       <Line type="monotone" 
         dataKey="uv" 
@@ -159,7 +159,7 @@ export default function App() {
           />
         )}/>
       <ReferenceLine y={mean_uv} stroke={COLORS.UV_COLOR} strokeDasharray="10 20" />
-      <ReferenceArea y1={10000} y2={mean_uv + stdDev_uv} fill={COLORS.UV_COLOR} fillOpacity={0.2} />
+      <ReferenceArea y1={mean_uv + stdDev_uv} fill={COLORS.UV_COLOR} fillOpacity={0.2} />
       <ReferenceArea y1={0} y2={mean_uv - stdDev_uv} fill={COLORS.UV_COLOR} fillOpacity={0.2} />
     </LineChart>
   );
