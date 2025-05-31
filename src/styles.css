@@ -1,0 +1,18 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.custom-tooltip {
+  background-color: white;
+  border: 1px solid lightslategray;
+  padding: 2px 20px;
+}
+
+.label {
+  color: black;
+}
+
+.intro {
+  color: black;
+}
